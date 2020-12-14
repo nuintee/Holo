@@ -1,12 +1,14 @@
 
 body{
   background-color: #000;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .frame{
     display:grid;
-    grid-template-rows: repeat(3,200px);
-    grid-template-columns:repeat(3,200px);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
   }
   
   canvas{
@@ -44,6 +46,11 @@ body{
 
   #input_target{
     background-color: #000;
+    background-image:url('pluss.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border: #1e1e1e 0.5em dashed;
     color: #FFF;
     cursor:pointer;
     grid-row: 2 / 3;
