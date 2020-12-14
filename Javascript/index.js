@@ -190,7 +190,7 @@
       const loader = new THREE.OBJLoader();
       loader.load(url,function(object){
         object.scale.set(5,5,5);
-        object.rotation.set(0, 0, 0);
+        object.rotation.set(0, 0, Math.PI);
         object.position.set(0, 0, 0); 
         scene.add(object);
       // 初回実行
